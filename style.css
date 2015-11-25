@@ -1,0 +1,64 @@
+body{
+	background-color:black; 
+}
+
+.simon {
+	font-size: 10em;
+	-webkit-transition: opacity 250ms ease;
+	-moz-transition: opacity 250ms ease;
+	-ms-transition: opacity 250ms ease;
+	-o-transition: opacity 250ms ease;
+	transition: opacity 250ms ease;
+
+}
+h1{
+	color: red;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#red{
+	color: red;
+	opacity: 0.5;
+	position: absolute;
+	top: 49%;
+	left: 34%;
+}
+#blue{
+	color: blue;
+	opacity: 0.5;
+	position: absolute;
+	top: 12%;
+	left: 45%;
+}
+#yellow{
+	color: yellow;
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	left: 56%;
+}
+#green{
+	color: green;
+	opacity: 0.5;
+	position: absolute;
+	top: 49%;
+	left: 45%;	
+}
+#red:hover{
+	opacity: 1;
+}
+#blue:hover{
+	opacity: 1;
+}
+#yellow:hover{
+	opacity: 1;
+}
+#green:hover{
+	opacity: 1;
+}
+.highlight {
+	opacity: 1;
+}
+
+
