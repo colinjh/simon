@@ -5,8 +5,8 @@ body{
 
 .simon {
 	font-size: 15em;
-	border: 1px solid black;
-	position: fixed;
+/*	border: 1px solid black;
+*/	position: fixed;
 	margin-left: 300px;	
 
 
@@ -15,21 +15,23 @@ h1{
 	color: black;
 	margin: 0 auto;
 	text-align: center;
-	letter-spacing: 5px;
-	font-family: 'Oxygen', sans-serif;
+/*	letter-spacing: 2px;
+*/	font-family: 'Press Start 2P', cursive;
 	text-shadow: 0 1px 0 #000;
 }
 h2 {
-	border: 1px solid black;
-	position: fixed;
-	font-family: 'Oxygen', sans-serif;
-	margin-left: 30em;
+/*	border: 1px solid black;
+*/	position: fixed;
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 28em;
 }
 h3 {
-	border: 1px solid black;
-	position: fixed;
-	font-family: 'Oxygen', sans-serif;
-	margin-left: 10em;
+/*	border: 1px solid black;
+*/	position: fixed;
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 12em;
+	margin-top: 25px;
+
 }
 
 #red{
@@ -76,8 +78,8 @@ h3 {
 .top {
 	margin: 0 auto;
 	padding-left: 260px;
-	border: 1px solid black;
-}
+/*	border: 1px solid black;
+*/}
 
 .bottom {
 	position: relative;
@@ -85,7 +87,7 @@ h3 {
 	padding-top: 50px;
 	padding-right: 50px;
 	display: inline-block;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 #start{
@@ -94,7 +96,8 @@ h3 {
 	top:10em;
 	font-size: 5em;
 	opacity: 0.5;
-	border: 1px solid black;
+/*	border: 1px solid black;
+*/	margin-left: 1em;
 
 }
 #start:hover{
@@ -106,10 +109,19 @@ h3 {
 	top:10em;
 	font-size: 5em;
 	opacity: 0.5;
-	border: 1px solid black;
+/*	border: 1px solid black;
+*/	margin-left: 14em;
 
 }
 #reload:hover{
 	opacity: 1;
+}
+p{
+	position: fixed;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 5em;
+	margin-left: 4em;
+	margin-top: 3em;
+
 }
 

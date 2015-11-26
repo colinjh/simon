@@ -57,9 +57,6 @@ var simon = {
 
 		playerTurn: function( e ) {
 
-				// IF THE COMPMOVE AND THE PLAYERMOVE ARE THE SAME LENGTH
-					// THIS ROUND IS OVEr
-
 			if ( !e ) { return; }
 			var x;
 			// $(document).keydown(function(e) {
@@ -94,10 +91,11 @@ var simon = {
 	    },
 		compTurn: function() {
 			Rounds ++;
-			$('h2.score').text('Round:' +Rounds);
+			$('h2.score').text('Round:  ' +Rounds);
 			if (compMove.toString("") !== playerMove.toString("")){
 					console.log('you lose');
 					simon.highScore();
+					simon.gameOver();
 				}else{
 					if (compMove.length === 0) {
 						var x = Math.ceil(Math.random()*4);
@@ -144,16 +142,21 @@ var simon = {
 									break;
 						}
 
-		    		}, 800 * i );
+		    		}, 650 * i );
 
 		    	})(i, x, that);
 
 			}	
 			playerMove = [];		
 	    },
+	    gameOver: function() {
+	    	console.log("game over");
+	    	$('p').text("GAME OVER");
+	    },
 	    newgame: function() {
 	    	$('#reload').on('click', function(){
 	    		console.log("new game");
+	    		$('p').empty();
 	    		compMove = [];
 	    		playerMove = [];
 	    		Rounds = 0;
@@ -164,15 +167,14 @@ var simon = {
 	    	if(Rounds > highestScore){
 	    		highestScore = Rounds;
 	    		console.log("high score");
-	    		$('h3').text("High Score:" +(highestScore-1));
+	    		$('h3').text("High Score:  " +(highestScore-1));
 	    	}	
 	    },
 	    startGame: function() {
 	    	$('#start').on('click', function(){
 	    		setTimeout(function(){simon.compTurn();}, 2000);
 	    	})
-	    },
-
+	    }
 }
 $(document).ready(function() { 
 		simon.startGame();
