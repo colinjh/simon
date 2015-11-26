@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>SIMON</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 	<script src="jquery-1.7.2.js"></script>
 	<script src="mousetrap.js"></script>
-	<script src="ionsound.js"></script>
 	<script src="logic.js"></script>
 </head>
 <body>
-	<h1>Simon</h1>
-<div class="simon">		
-<i class="fa fa-caret-square-o-left" id="red" data-tile="1"></i>
-<i class="fa fa-caret-square-o-up" id="blue" data-tile="2"></i>
-<i class="fa fa-caret-square-o-right" id="yellow" data-tile="3"></i>
-<i class="fa fa-caret-square-o-down" id="green" data-tile="4"></i>	
+	<h1>SIMON - AKA Dance Dance Revolution for Fingers</h1>
+	<h2 class="score"></h2>
+	<h3></h3>
+<i class="fa fa-play" id="start"></i>
+<i class="fa fa-repeat"id="reload"></i>	
+<div class="simon">	
+<div class="top">
+	<i class="fa fa-caret-square-o-up" id="blue" ></i>	
 </div>
+<div class="bottom">
+<i class="fa fa-caret-square-o-left" id="red"></i>
+<i class="fa fa-caret-square-o-down" id="green" ></i>	
+<i class="fa fa-caret-square-o-right" id="yellow"></i>
+</div>
+</div>
+<p></p>
 </body>
 </html>

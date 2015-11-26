@@ -1,49 +1,62 @@
 body{
-	background-color:black; 
+	background-image: url("blurred.jpg");
+	background-size: 100% auto;
 }
 
 .simon {
-	font-size: 10em;
-	-webkit-transition: opacity 250ms ease;
-	-moz-transition: opacity 250ms ease;
-	-ms-transition: opacity 250ms ease;
-	-o-transition: opacity 250ms ease;
-	transition: opacity 250ms ease;
+	font-size: 15em;
+	border: 1px solid black;
+	position: fixed;
+	margin-left: 300px;	
+
 
 }
 h1{
-	color: red;
+	color: black;
 	margin: 0 auto;
 	text-align: center;
+	letter-spacing: 5px;
+	font-family: 'Oxygen', sans-serif;
+	text-shadow: 0 1px 0 #000;
+}
+h2 {
+	border: 1px solid black;
+	position: fixed;
+	font-family: 'Oxygen', sans-serif;
+	margin-left: 30em;
+}
+h3 {
+	border: 1px solid black;
+	position: fixed;
+	font-family: 'Oxygen', sans-serif;
+	margin-left: 10em;
 }
 
 #red{
-	color: red;
+	color: rgb(255,0,0);
 	opacity: 0.5;
-	position: absolute;
+/*	position: absolute;
 	top: 49%;
-	left: 34%;
+	left: 34%;*/
 }
 #blue{
 	color: blue;
 	opacity: 0.5;
-	position: absolute;
-	top: 12%;
-	left: 45%;
-}
+	
+}	
 #yellow{
 	color: yellow;
 	opacity: 0.5;
-	position: absolute;
+/*	position: absolute;
 	top: 50%;
-	left: 56%;
+	left: 56%;*/
 }
 #green{
 	color: green;
 	opacity: 0.5;
-	position: absolute;
+/*	position: absolute;
 	top: 49%;
-	left: 45%;	
+	left: 45%;	*/
 }
 #red:hover{
 	opacity: 1;
@@ -60,5 +73,43 @@ h1{
 .highlight {
 	opacity: 1;
 }
+.top {
+	margin: 0 auto;
+	padding-left: 260px;
+	border: 1px solid black;
+}
 
+.bottom {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-right: 50px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#start{
+	position: inline-block;
+	right: 10em;
+	top:10em;
+	font-size: 5em;
+	opacity: 0.5;
+	border: 1px solid black;
+
+}
+#start:hover{
+	opacity: 1;
+}
+#reload {
+	position: inline-block;
+	right: 10em;
+	top:10em;
+	font-size: 5em;
+	opacity: 0.5;
+	border: 1px solid black;
+
+}
+#reload:hover{
+	opacity: 1;
+}
 
