@@ -154,14 +154,14 @@ var simon = {
 	    	$('p').text("GAME OVER");
 	    },
 	    newgame: function() {
-	    	$('#reload').on('click', function(){
 	    		console.log("new game");
 	    		$('p').empty();
+	    		$('h2.score').empty();
 	    		compMove = [];
 	    		playerMove = [];
 	    		Rounds = 0;
 	    		simon.startGame();	
-	    	})	
+	    		
 	    },
 	    highScore: function() {
 	    	if(Rounds > highestScore){
@@ -171,19 +171,23 @@ var simon = {
 	    	}	
 	    },
 	    startGame: function() {
-	    	$('#start').on('click', function(){
+	    	
 	    		setTimeout(function(){simon.compTurn();}, 2000);
-	    	})
+	    	
 	    }
 }
 $(document).ready(function() { 
 		simon.startGame();
-		simon.newgame();
+	
 	$(document).keydown(function(e) {
 		simon.playerTurn( e );
 	});
-	
-
+	$('#reload').on('click', function(){
+		simon.newgame();
+	})
+	$('#start').on('click', function(){		
+		simon.startGame();
+	})	
 });
 
 
