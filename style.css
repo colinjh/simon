@@ -116,12 +116,20 @@ h3 {
 #reload:hover{
 	opacity: 1;
 }
-p{
+p.gameover{
 	position: fixed;
 	font-family: 'Press Start 2P', cursive;
 	font-size: 5em;
 	margin-left: 4em;
 	margin-top: 3em;
+
+}
+p.newgame{
+	position: fixed;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	margin-left: 61em;
+	margin-top: 0em;
 
 }
 

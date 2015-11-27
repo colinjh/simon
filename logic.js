@@ -151,7 +151,8 @@ var simon = {
 	    },
 	    gameOver: function() {
 	    	console.log("game over");
-	    	$('p').text("GAME OVER");
+	    	$('p.gameover').text("GAME OVER");
+	    	$('p.newgame').text('New Game');
 	    },
 	    newgame: function() {
 	    		console.log("new game");
