@@ -13,4 +13,4 @@ The initial code for my tic tac toe was done working with Harry so I wanted to d
 
 ### Link to Game
 
-http://colinjh.github.io/tictactoe/
+http://colinjh.github.io/simon/
